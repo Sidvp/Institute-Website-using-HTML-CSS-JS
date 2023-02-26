@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CARES GOA</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/> -->
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav> 
+                <a href="index.html"><img src="images/logo3.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="events.html">EVENTS</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="gallary.html">GALLARY</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Contact Us</h1>
+        </section>
+
+        <!-- Contact page -->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123034.39929958787!2d73.7515794649368!3d15.493843710139487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc1eff6760c4f%3A0xb130fd8954a43a70!2sCoding%20And%20Robotics%20Education%20in%20Schools%20Scheme%20(CARES)!5e0!3m2!1sen!2sin!4v1677415504274!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Coding And Robotics Education in Schools (CARES) Scheme</h5>
+                            <p> DTE Building, Alto-Porvorim, Bardez, Porvorim, Goa 403521</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+91-832-2413571.</h5>
+                            <p> Monday to Friday, 09:30 AM - 05:45 PM</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5> cares-admin@goa.gov.in</h5>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="contact-col">
+                    <form action="form-handler.php" method="post">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter your Email ID" required>
+                        <input type="text" name="subject" placeholder="Enter Subject" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                        <button type="submit" class="main-btn red-btn">Send Message</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+    
+        <!-- Footer -->
+        <section class="footer">
+            <h4>About CARES</h4>
+            <P>Mission to develop computational and design thinking skills along with programming 
+                integrated into the school level education <br> for the State of Goa to prepare students for the 
+                demands of the 21st-century digital world.</P>
+            <div class="icons">
+                <a href="https://www.facebook.com/caresgoa/"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/cares_goa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com/cares_goa/?r=nametag"><i class="fa fa-instagram"></i></a>
+                <a href="https://in.linkedin.com/company/cares-goa"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCxFgQGAMuymIvUYTJA8-SGw"><i class="fa fa-youtube"></i></a>
+            </div>
+            <p><i class="fa fa-copyright"></i> Copyright 2023 - CARES GOA </p>
+
+
+        </section>
+        <!--JavaScript for Toggle Menu  -->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+
+        </script>
+
+    </body>
+</html>
